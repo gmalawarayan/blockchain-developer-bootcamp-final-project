@@ -24,10 +24,8 @@ Inspired by the [NFT Brownie Mix](https://github.com/PatrickAlphaC/nft-mix)
     - [Random SVG Deployment](#random-svg-deployment)
 - [Create NFT & View on OpenSea](#create-nft--view-on-opensea)
   - [Important notes for SVGs](#important-notes-for-svgs)
-  - [Other Notes](#other-notes)
   - [Test](#test)
   - [Verify on Etherscan](#verify-on-etherscan)
-    - [Linting](#linting)
 
 ### About SVGs
 
