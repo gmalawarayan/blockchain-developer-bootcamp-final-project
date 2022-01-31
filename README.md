@@ -145,10 +145,6 @@ Once deployed, each will look something like this:
 
 Using SVGs will allow you to make all the drawings directly on-chain, and store them on chain too! For example, you could store an SVG as a string, and then edit it to change your drawings.
 
-## Other Notes
-
-1. I wasn't able to make `data:image/png` types work as an imageURI, but hypothetically it should.
-
 ## Test
 
 Tests are located in the [test](https://github.com/smartcontractkit/hardhat-starter-kit/tree/main/test) directory, and are split between unit tests and integration tests. Unit tests should only be run on local environments, and integration tests should only run on live environments.
@@ -171,10 +167,4 @@ example:
 
 ```
 npx hardhat verify --network kovan 0x9279791897f112a41FfDa267ff7DbBC46b96c296 "0x9326BFA02ADD2366b30bacB125260Af641031331"
-```
-
-### Linting
-
-```
-yarn lint:fix
 ```
