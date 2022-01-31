@@ -1,17 +1,4 @@
-<br/>
-<p align="center">
-<a href="https://chain.link" target="_blank">
-<img src="./img/randomsvg.svg" width="225" alt="Random NFT logo">
-</a>
-</p>
-<br/>
-
 # All On Chain Generated NFT
-
-This is a repo that shows 2 things:
-
-1. How to create NFTs with metadata that is 100% on-chain
-2. How we can generate random art on-chain using the SVG method
 
 Inspired by the [NFT Brownie Mix](https://github.com/PatrickAlphaC/nft-mix)
 
