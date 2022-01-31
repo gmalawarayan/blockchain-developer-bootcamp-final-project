@@ -90,12 +90,6 @@ cd blockchain-developer-bootcamp-final-project
 then
 
 ```bash
-npm install
-```
-
-Or
-
-```bash
 yarn
 ```
 

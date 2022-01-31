@@ -7,21 +7,29 @@ const fs = require('fs')
 const { deployments, getChainId } = require('hardhat')
 const { networkConfig, developmentChains } = require('../helper-hardhat-config')
 
-skip.if(!developmentChains.includes(network.name)).
-    describe('RandomSVG Unit Tests', async function () {
-        let rsNFT
+skip
+  .if(!developmentChains.includes(network.name))
+  .describe('RandomSVG Unit Tests', async function () {
+    let rsNFT
 
-        beforeEach(async () => {
-            await deployments.fixture(['mocks', 'rsvg'])
-            const RandomSVG = await deployments.get("RandomSVG")
-            rsNFT = await ethers.getContractAt("RandomSVG", RandomSVG.address)
-        })
-
-        it('should return the correct URI', async () => {
-            let expectedURI = fs.readFileSync("./test/data/randomSVG.txt", "utf8")
-            let uri = await rsNFT.tokenURI(0)
-            console.log(expectedURI)
-            console.log(uri)
-            expect(uri == expectedURI).to.be.true
-        })
+    beforeEach(async () => {
+      await deployments.fixture(['mocks', 'rsvg'])
+      const RandomSVG = await deployments.get('RandomSVG')
+      rsNFT = await ethers.getContractAt('RandomSVG', RandomSVG.address)
     })
+
+    it('should return the correct URI', async () => {
+      let expectedURI = fs.readFileSync('./test/data/randomSVG.txt', 'utf8')
+      let uri = await rsNFT.tokenURI(0)
+      console.log(expectedURI)
+      console.log(uri)
+      expect(uri == expectedURI).to.be.true
+    })
+
+    it('should return this address', async () => {
+      let adressOfRmNft = rsNFT.address
+      expect(adressOfRmNft).to.equal(
+        '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9',
+      )
+    })
+  })

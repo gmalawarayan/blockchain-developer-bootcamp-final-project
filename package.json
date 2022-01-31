@@ -32,7 +32,8 @@
     "dotenv": "^8.2.0",
     "eslint": "^7.22.0",
     "mocha-skip-if": "^0.0.3",
-    "transform": "^1.1.2"
+    "npx": "^3.0.0",
+    "transform": "^0.0.9"
   },
   "mocha": {
     "timeout": 10000000
